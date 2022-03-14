@@ -432,9 +432,9 @@ if __name__ == "__main__":
     r_hip, l_hip = 2, 1
     joints_num = 22
     # ds_num = 8
-    data_dir = '../dataset/pose_data_raw/joints/'
-    save_dir1 = '../dataset/pose_data_raw/new_joints/'
-    save_dir2 = '../dataset/pose_data_raw/new_joint_vecs/'
+    data_dir = './HumanML3D/joints/'
+    save_dir1 = './HumanML3D/new_joints/'
+    save_dir2 = './HumanML3D/new_joint_vecs/'
 
     n_raw_offsets = torch.from_numpy(t2m_raw_offsets)
     kinematic_chain = t2m_kinematic_chain
