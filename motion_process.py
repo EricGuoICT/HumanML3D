@@ -1,10 +1,11 @@
 from os.path import join as pjoin
 
+# sys.path.append('./')
 from common.skeleton import Skeleton
 import numpy as np
 import os
 from common.quaternion import *
-from utils.paramUtil import *
+from paramUtil import *
 
 import torch
 from tqdm import tqdm
@@ -414,10 +415,11 @@ def recover_from_ric(data, joints_num):
     positions = torch.cat([r_pos.unsqueeze(-2), positions], dim=-2)
 
     return positions
+
 '''
-For Text2Motion Dataset
+For HumanML3D Dataset
 '''
-'''
+
 if __name__ == "__main__":
     example_id = "000021"
     # Lower legs
@@ -483,7 +485,7 @@ if __name__ == "__main__":
     n_raw_offsets = torch.from_numpy(kit_raw_offsets)
     kinematic_chain = kit_kinematic_chain
 
-    '''Get offsets of target skeleton'''
+    # Get offsets of target skeleton
     example_data = np.load(os.path.join(data_dir, example_id + '.npy'))
     example_data = example_data.reshape(len(example_data), -1, 3)
     example_data = torch.from_numpy(example_data)
@@ -494,7 +496,7 @@ if __name__ == "__main__":
 
     source_list = os.listdir(data_dir)
     frame_num = 0
-    '''Read source data'''
+    # Read source data
     for source_file in tqdm(source_list):
         source_data = np.load(os.path.join(data_dir, source_file))[:, :joints_num]
         try:
@@ -513,3 +515,4 @@ if __name__ == "__main__":
 
     print('Total clips: %d, Frames: %d, Duration: %fm' %
           (len(source_list), frame_num, frame_num / 12.5 / 60))
+'''
