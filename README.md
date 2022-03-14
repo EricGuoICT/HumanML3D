@@ -1,9 +1,6 @@
-# HumanML3D: 3D Human Motion-Language Dataset
+# <b>HumanML3D: 3D Human Motion-Language Dataset</b>
 
-
-<video width="30%">
-  <source src="src=https://github.com/EricGuoICT/HumanML3D/blob/main/HumanML3D/animations/000000.mp4", type="video/mp4">
-</video>
+<video src="./HumanML3D/animations/000000.mp4" controls="controls" width="500" height="300"></video>
 
 ## Download Data
 
