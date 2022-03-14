@@ -53,7 +53,9 @@ the standing person kicks with their left foot before going back to their origin
 a man kicks with something or someone with his left leg.#a/DET man/NOUN kick/VERB with/ADP something/PRON or/CCONJ someone/PRON with/ADP his/DET left/ADJ leg/NOUN#0.0#0.0
 he is flying kick with his left leg#he/PRON is/AUX fly/VERB kick/NOUN with/ADP his/DET left/ADJ leg/NOUN#0.0#0.0
 ```
-with each line a distint textual annotation, composed of four parts: *original description*, *processed sentence*, *start time*, *end time*, that are seperated by *#*.
+with each line a distint textual annotation, composed of four parts: *original description*, *processed sentence*, *start time(s)*, *end time(s)*, that are seperated by *#*.
+
+Since some motions are too complicated to be described, we allow the annotators to describe a sub-part of a given motion if required. In these cases, *start time(s)* and *end time(s)* denotes the motion segments that are annotated. Nonetheless, we observe these only occupy a small proportion of HumanML3D. *start time(s)* and *end time(s)* are set to 0 by default, which means the text is captioning the entire sequence of corresponding motion. 
 
 ## Installation
 
