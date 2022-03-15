@@ -83,3 +83,42 @@ Recover 3d human motions from rotation features or rotation invariant features, 
 ```sh
 ./plot_script.py
 ```
+If you are not able to install ffmpeg, you could animate videos in '.gif' instead of '.mp4'. However, generating GIFs usually takes longer time and memory occupation.
+
+If you are using KIT-ML dataset, please consider citing the following paper:
+```
+@article{Plappert2016,
+    author = {Matthias Plappert and Christian Mandery and Tamim Asfour},
+    title = {The {KIT} Motion-Language Dataset},
+    journal = {Big Data}
+    publisher = {Mary Ann Liebert Inc},
+    year = 2016,
+    month = {dec},
+    volume = {4},
+    number = {4},
+    pages = {236--252},
+    url = {http://dx.doi.org/10.1089/big.2016.0028},
+    doi = {10.1089/big.2016.0028},
+}
+```
+
+If you are using HumanML3D dataset, please consider citing the following papers:
+```
+@inproceedings{mahmood2019amass,
+  title={AMASS: Archive of motion capture as surface shapes},
+  author={Mahmood, Naureen and Ghorbani, Nima and Troje, Nikolaus F and Pons-Moll, Gerard and Black, Michael J},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={5442--5451},
+  year={2019}
+}
+```
+
+```
+@inproceedings{guo2020action2motion,
+  title={Action2motion: Conditioned generation of 3d human motions},
+  author={Guo, Chuan and Zuo, Xinxin and Wang, Sen and Zou, Shihao and Sun, Qingyao and Deng, Annan and Gong, Minglun and Cheng, Li},
+  booktitle={Proceedings of the 28th ACM International Conference on Multimedia},
+  pages={2021--2029},
+  year={2020}
+}
+```
