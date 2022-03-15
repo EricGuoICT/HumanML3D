@@ -69,5 +69,17 @@ Since some motions are too complicated to be described, we allow the annotators 
 
 ## Process Data
 
+```sh
+<!--Pre-processing motions, extracting rotation invariant features and rotation features-->
+./motion_process.py
+<!--Pre-processing texts-->
+./text_process.py
+<!--Obtaining the mean and variance of motion data, for the purpose of normalization-->
+./cal_mean_variance.py
+```
 
 ## Animate Data
+Recover 3d human motions from rotation features or rotation invariant features, and animate them in 3D.
+```sh
+./plot_script.py
+```
