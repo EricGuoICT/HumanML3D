@@ -57,7 +57,15 @@ with each line a distint textual annotation, composed of four parts: *original d
 
 Since some motions are too complicated to be described, we allow the annotators to describe a sub-part of a given motion if required. In these cases, *start time(s)* and *end time(s)* denotes the motion segments that are annotated. Nonetheless, we observe these only occupy a small proportion of HumanML3D. *start time(s)* and *end time(s)* are set to 0 by default, which means the text is captioning the entire sequence of corresponding motion. 
 
-## Installation
+## Library Requirements
+- Python 3
+- Numpy          // For motion process and animation
+- Scipy          // For motion process
+- PyTorch        // For motion process and animation
+- Tqdm           // For motion process
+- Matplotlib     // For animation
+- ffmpeg==4.3.1  // For animation
+- Spacy==2.3.4   // For text process
 
 ## Process Data
 
