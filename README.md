@@ -23,7 +23,8 @@ We double the size of HumanML3D dataset by mirroring all motions and properly re
 ## Download Data
 An example is provided in this repository (./HumanML3D).
 
-Download [HumanML3D](https://drive.google.com/drive/folders/1e437ofkMW_C6KnP2ef7JY_UuX7XN9_zZ?usp=sharing) dataset.
+<!-- Download [HumanML3D](https://drive.google.com/drive/folders/1e437ofkMW_C6KnP2ef7JY_UuX7XN9_zZ?usp=sharing) dataset. -->
+Download HumanML3D dataset.
 
 Download [KIT-ML](https://drive.google.com/drive/folders/1MnixfyGfujSP-4t8w_2QvjtTVpEKr97t?usp=sharing) dataset.
 
